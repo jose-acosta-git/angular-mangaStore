@@ -1,1 +1,34 @@
-<p>book-list works!</p>
+<h1>Lista de mangas</h1>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Género</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Cantidad</th>
+            <th>Comprar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books" [ngClass]="{'clearance': book.clearance && book.stock!=0}">
+            <td>
+                <img [src]="book.image" [alt]="book.name" width="100">
+            </td>
+            <td> {{book.name}} </td>
+            <td> {{book.genre}} </td>
+            <td> {{book.price}} </td>
+            <td>
+                <span *ngIf="book.stock!=0" class="badge badge-success">Stock disponible</span>
+                <span *ngIf="book.stock==0" class="badge badge-danger">Sin stock</span>
+            </td>
+            <td>
+                <app-input-integer *ngIf="book.stock" [(quantity)]="book.quantity" [max]="book.stock" (maxReached)="maxReached($event)" ></app-input-integer>
+            </td>
+            <td>
+                <button *ngIf="book.stock" (click)="addToCart(book)" class="btn btn-primary btn-sm">-></button>
+            </td>
+        </tr>
+    </tbody>
+</table>

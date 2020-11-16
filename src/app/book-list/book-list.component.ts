@@ -14,7 +14,7 @@ export class BookListComponent implements OnInit {
     {
       name: 'Fullmetal Alchemist',
       image: 'assets/img/fullmetal-alchemist.jpg',
-      genre: 'magic',
+      genre: 'Magic',
       price: 500,
       stock: 15,
       clearance: false,
@@ -23,7 +23,7 @@ export class BookListComponent implements OnInit {
     {
       name: 'One Piece',
       image: 'assets/img/one-piece.jpg',
-      genre: 'adventure',
+      genre: 'Adventure',
       price: 430,
       stock: 5,
       clearance: true,
@@ -32,25 +32,25 @@ export class BookListComponent implements OnInit {
     {
       name: 'Solo Leveling',
       image: 'assets/img/solo-leveling.jpg',
-      genre: 'action',
+      genre: 'Action',
       price: 650,
       stock: 47,
       clearance: false,
       quantity: 0,
     },
     {
-      name: 'One Punch-Man',
+      name: 'Haikyuu!!',
       image: 'assets/img/haikyuu.jpg',
-      genre: 'sports',
+      genre: 'Sports',
       price: 530,
       stock: 0,
       clearance: true,
       quantity: 0,
     },
     {
-      name: 'Haikyuu!!',
+      name: 'One Punch-Man',
       image: 'assets/img/one-punch-man.jpg',
-      genre: 'action',
+      genre: 'Action',
       price: 490,
       stock: 37,
       clearance: false,
@@ -59,7 +59,7 @@ export class BookListComponent implements OnInit {
     {
       name: 'Death Note',
       image: 'assets/img/death-note.jpg',
-      genre: 'drama',
+      genre: 'Drama',
       price: 510,
       stock: 25,
       clearance: false,
@@ -68,7 +68,7 @@ export class BookListComponent implements OnInit {
     {
       name: 'Hunter x Hunter',
       image: 'assets/img/hunter-x-hunter.jpg',
-      genre: 'adventure',
+      genre: 'Adventure',
       price: 320,
       stock: 15,
       clearance: true,
@@ -77,13 +77,21 @@ export class BookListComponent implements OnInit {
     {
       name: 'Re:Zero kara Hajimeru Isekai Seikatsu',
       image: 'assets/img/re-zero.jpg',
-      genre: 'drama',
+      genre: 'Drama',
       price: 560,
       stock: 43,
       clearance: false,
       quantity: 0,
     },
   ]
+
+  maxReached() {
+    alert("no hay mas");
+  }
+
+  addToCart(book: Book) {
+
+  }
 
   ngOnInit(): void {
   }

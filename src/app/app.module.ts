@@ -7,6 +7,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { MangaStoreBooksComponent } from './manga-store-books/manga-store-books.component';
 import { MangaStoreAboutComponent } from './manga-store-about/manga-store-about.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MangaStoreAboutComponent } from './manga-store-about/manga-store-about.
     BookListComponent,
     ShoppingCartComponent,
     MangaStoreBooksComponent,
-    MangaStoreAboutComponent
+    MangaStoreAboutComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,
