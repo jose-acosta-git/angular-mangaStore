@@ -13,6 +13,7 @@ export class BookListComponent implements OnInit {
   books: Book[] = [
     {
       name: 'Fullmetal Alchemist',
+      volume: 27,
       image: 'assets/img/fullmetal-alchemist.jpg',
       genre: 'Magic',
       price: 500,
@@ -22,6 +23,7 @@ export class BookListComponent implements OnInit {
     },
     {
       name: 'One Piece',
+      volume: 95,
       image: 'assets/img/one-piece.jpg',
       genre: 'Adventure',
       price: 430,
@@ -31,6 +33,7 @@ export class BookListComponent implements OnInit {
     },
     {
       name: 'Solo Leveling',
+      volume: 14,
       image: 'assets/img/solo-leveling.jpg',
       genre: 'Action',
       price: 650,
@@ -40,6 +43,7 @@ export class BookListComponent implements OnInit {
     },
     {
       name: 'Haikyuu!!',
+      volume: 45,
       image: 'assets/img/haikyuu.jpg',
       genre: 'Sports',
       price: 530,
@@ -49,6 +53,7 @@ export class BookListComponent implements OnInit {
     },
     {
       name: 'One Punch-Man',
+      volume: 22,
       image: 'assets/img/one-punch-man.jpg',
       genre: 'Action',
       price: 490,
@@ -58,6 +63,7 @@ export class BookListComponent implements OnInit {
     },
     {
       name: 'Death Note',
+      volume: 12,
       image: 'assets/img/death-note.jpg',
       genre: 'Drama',
       price: 510,
@@ -67,6 +73,7 @@ export class BookListComponent implements OnInit {
     },
     {
       name: 'Hunter x Hunter',
+      volume: 36,
       image: 'assets/img/hunter-x-hunter.jpg',
       genre: 'Adventure',
       price: 320,
@@ -76,6 +83,7 @@ export class BookListComponent implements OnInit {
     },
     {
       name: 'Re:Zero kara Hajimeru Isekai Seikatsu',
+      volume: 6,
       image: 'assets/img/re-zero.jpg',
       genre: 'Drama',
       price: 560,

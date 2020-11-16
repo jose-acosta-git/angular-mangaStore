@@ -4,6 +4,7 @@
         <tr>
             <th>Imagen</th>
             <th>Nombre</th>
+            <th>Volumen</th>
             <th>Género</th>
             <th>Precio</th>
             <th>Stock</th>
@@ -17,6 +18,7 @@
                 <img [src]="book.image" [alt]="book.name" width="100">
             </td>
             <td> {{book.name}} </td>
+            <td>#{{book.volume}}</td>
             <td> {{book.genre}} </td>
             <td> {{book.price | currency}} </td>
             <td>
