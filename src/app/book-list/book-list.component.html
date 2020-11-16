@@ -18,7 +18,7 @@
             </td>
             <td> {{book.name}} </td>
             <td> {{book.genre}} </td>
-            <td> {{book.price}} </td>
+            <td> {{book.price | currency}} </td>
             <td>
                 <span *ngIf="book.stock!=0" class="badge badge-success">Stock disponible</span>
                 <span *ngIf="book.stock==0" class="badge badge-danger">Sin stock</span>
