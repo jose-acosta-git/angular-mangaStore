@@ -1,3 +1,11 @@
-<button (click)="downQuantity()" class="btn btn-primary btn-sm">-</button>
-<span class="badge badge-secondary">{{quantity}}</span>
-<button (click)="upQuantity()" class="btn btn-primary btn-sm">+</button>
+<div class="input-group">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <button (click)="downQuantity()" class="btn btn-primary btn-sm">-</button>
+        </div>
+        <span class="badge badge-secondary">{{quantity}}</span>
+        <div class="input-group-append">
+            <button (click)="upQuantity()" class="btn btn-primary btn-sm">+</button>
+        </div>
+    </div>
+</div>
