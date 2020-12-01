@@ -24,7 +24,7 @@ export class BookListComponent implements OnInit {
   }
 
   maxReached() {
-    alert("no hay mas");
+    alert("No hay más stock!");
   }
 
   addToCart(book: Book) {
